@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverInfo">
+
+    <TextView
+        android:id="@+id/daysDrivenTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nameTxt"
+        android:layout_marginBottom="166dp"
+        android:text="Days Driven Previously: "
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <TextView
+        android:id="@+id/driverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/daysInput"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Driver Info"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="84dp"
+        android:layout_toStartOf="@+id/driverName"
+        android:text="Name: "
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <TextView
+        android:id="@+id/availableTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameTxt"
+        android:layout_marginTop="163dp"
+        android:text="Availability:"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toggle"
+        android:layout_alignTop="@+id/nameTxt"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <EditText
+        android:id="@+id/daysInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <Switch
+        android:id="@+id/toggle"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_centerInParent="true"
+        android:textOff="No"
+        android:textOn="Yes"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:id="@+id/yesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="82dp"
+        android:text="Yes"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/noTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggle"
+        android:layout_alignEnd="@+id/daysInput"
+        android:text="No"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <Button
+        android:id="@+id/addDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/yesTxt"
+        android:layout_alignTop="@+id/next"
+        android:text="Add Driver"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="76dp"
+        android:text="Next"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="447dp" />
+</RelativeLayout>
